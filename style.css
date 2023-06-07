@@ -1,0 +1,87 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  font-family: 'Roboto', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+#sidebar {
+  background-color: #1992d4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+#main-content {
+  background-color: #e2e8f0;
+}
+
+.menu-item {
+  color: white;
+  display: grid;
+  container-name: menu-item;
+  container-type: size;
+  height: 40px;
+  grid-template-columns: 1fr 5fr;
+  margin-left: 10%;
+  gap: 5%;
+  align-items: center;
+  font-weight: 700;
+}
+.menu-item p {
+  font-size: 40cqh;
+}
+.menu-item svg {
+  height: 50cqh;
+}
+#top-menu-items{
+  margin-bottom: 30px;
+}
+#dashboard-menu-item {
+  height: 80px;
+}
